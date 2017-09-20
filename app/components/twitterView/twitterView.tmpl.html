@@ -1,0 +1,24 @@
+<div class="main-header-container controlls">
+    <p ng-show="!$ctrl.twitterHandle" class="twitterHandlePromptHeading">Enter a twitter handle</p>
+    
+    <div>
+
+            <span>@</span><input class="handleInput" value="lancasteruni" type="text" placeholder="LancasterUni" ng-model="$ctrl.twitterHandle" ng-change="$ctrl.handleChange()"  ng-model-options="{debounce: 500}">
+            <p ng-show="$ctrl.error">Invalid twitter handle.</p>
+        
+    </div>
+    <button class="btn btn-default" ng-click="$ctrl.openModal()"> Share</button>
+    
+</div>
+    
+   
+<div ng-repeat="(key, tweet) in $ctrl.tweetsToDisplay">
+    <tweet tweetid="tweet.id_str" index="$index" text="tweet.full_text" media="tweet.entities.media" user-screen-name="tweet.user.screen_name"> </tweet>
+</div>
+
+
+<div class="slider-container">
+    <rzslider rz-slider-model="slider.value" rz-slider-options="slider.options"></rzslider>
+</div>
+
+

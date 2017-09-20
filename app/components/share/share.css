@@ -1,0 +1,68 @@
+.uploaded-image{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.image-button{
+    background: none;
+    border: none;
+}
+.authenication-flow{
+    text-align: center;
+}
+.step1{
+    min-height: 100px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.step2{
+    min-height: 100px;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.centered{
+    max-width: 160px;
+    margin: 0 auto;
+}
+.pin-input{
+    border-radius: 4px;
+    font-size: 25px;
+    text-align: center;
+}
+.compose-tweet{
+    text-align: center;
+}
+.compose-tweet-container{
+    display:flex;
+    justify-content: center;
+    min-height: 100px;
+    width: 100%;
+    
+}
+
+.image-input{
+    margin-right: 5px;
+    padding-right: 5px;
+    max-width: 120px;
+    
+}
+.tweet-input{
+    margin-right: 5px;
+    padding-right: 5px;
+}
+.tweet-input textarea{
+    width: 100%;
+    min-height: 50px;
+    font-size: 14px;
+}
+.tweet-text{
+    min-width: 200px;
+    max-width: 400px;
+}
+.send-tweet{
+    
+    
+}

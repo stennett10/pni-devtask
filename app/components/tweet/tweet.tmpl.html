@@ -1,0 +1,6 @@
+<div class="tweet-container index{{$ctrl.index}}">
+    <a href="https://twitter.com/{{$ctrl.userScreenName}}/status/{{$ctrl.tweetid}}" target="_blank">
+            <img class="tweet-image" ng-src="{{$ctrl.media[0].media_url}}" ng-show="$ctrl.media[0].media_url.length > 0">
+            <p class="tweet-text">{{$ctrl.text}}</p>
+    </a>
+</div>

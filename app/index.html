@@ -12,28 +12,55 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="components/twitterView/twitterView.css">
+  <link rel="stylesheet" href="components/tweet/tweet.css">
+  <link rel="stylesheet" href="components/share/share.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="seedrandom.js"></script><!--This shouldnt be here ideally!-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angularjs-slider/6.3.0/rzslider.min.css">
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#!/view1">view1</a></li>
-    <li><a href="#!/view2">view2</a></li>
-  </ul>
+  <div class="row no-gutters">
+    <div class="hidden-sm hidden-xs col-md-3">
+      <div class="side-bar">
+        <div class="header">
+            <h1>Twitter Time</h1>
+            
+            <p>Display a Twitter feed as if you were travelling <i>through</i> it, into the past.</p>
+                    
+        </div>
+          
+      </div>
+    </div>
+    <div class="col-md-9">
+        <div class="page-container" ng-view></div>
+    </div>
+  </div>
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <div ng-view></div>
 
 
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
+  <script src="ui-bootstrap-tpls-2.5.0.min.js"></script>
+  
   <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
+  <script src="components/twitterView/twitterView.ctrl.js"></script>
+  <script src="components/tweet/tweet.ctrl.js"></script>
+  <script src="components/share/share.ctrl.js"></script>
+  <script src="services/twitterService.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-slider/6.3.0/rzslider.min.js"></script>
 </body>
 </html>

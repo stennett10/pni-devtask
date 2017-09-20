@@ -1,0 +1,49 @@
+<div class="modal-header">
+        <h2>Update your twitter status</h2>
+</div>
+<div class="modal-body">
+    <div ng-if="!$ctrl.authedSuccessfully">
+            <div class="authentication-flow">
+                    <div ng-if="$ctrl.authStep == 1" class="step1">
+                        <h3>First, sign into twitter</h3>
+                        
+                        <button ng-click="$ctrl.twitterSignIn()" class="image-button centered"><img src="/images/sign-in-with-twitter-gray.png"></button>  
+                        
+                    </div>
+                    <div ng-if="$ctrl.authStep == 2" class="step2">
+                        <h3>Now, enter the pin below</h3>
+                        <input class="pin-input" type="text" placeholder="Twitter Pin" ng-change="$ctrl.twitterPinChanged()" ng-model-options="{debounce: 500}" ng-model="$ctrl.twitterPin">
+                        
+                    </div>
+            </div>
+                
+                
+    </div>
+    <div class="compose-tweet" ng-if="$ctrl.authedSuccessfully">
+                
+        <h3>Compose a tweet</h3>
+        <div class="compose-tweet-container"> 
+                
+                <div class="image-input">
+                        <label class="btn btn-default btn-file">
+                                Select Image<input style="display:none;" type="file" id="file" onchange="angular.element(this).scope().imageSelected()">
+                        </label>
+                        <img class="uploaded-image" ng-src="data:image/png;base64, {{$ctrl.uploadedFile}}" src="">                  
+                </div>
+
+                <div class="tweet-input">
+                        <textarea type="text" maxlength="140" class="tweet-text" id="tweetText" ng-model="$ctrl.tweetText"></textarea>
+                </div>
+
+                <div class="send-tweet">
+                        <button type="submit" class="btn btn-default"ng-click="$ctrl.handleSendTweet()">Tweet</button>
+                </div>
+        </div>     
+
+        
+        
+        
+                
+                
+    </div>
+</div>

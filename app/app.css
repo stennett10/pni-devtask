@@ -1,25 +1,36 @@
-/* app css stylesheet */
-
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+.side-bar{
+  min-height: 100vh;
+  
+  background: #1a8bf0;
+  text-align: center;
+  color:white;
+  padding-right: 0;
+  margin-bottom: -10px; /*hack to remove white bar at bottom*/
 }
 
-.menu:before {
-  content: "[";
+.header{
+  padding-top: 50px;
+
 }
 
-.menu:after {
-  content: "]";
+.mainViewContainer{
+  min-height: 100vh;
+  min-width: 100%;
+  background-color: #C5D7FF;
+  overflow:auto;
 }
 
-.menu > li {
-  display: inline;
+.row.no-gutters { /* https://julienmelissas.com/no-gutter-column-trick-for-bootstrap/*/
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
 }
 
-.menu > li + li:before {
-  content: "|";
-  padding-right: 0.3em;
+.page-container{
+  max-height: 100vh;
+  overflow: hidden;
 }

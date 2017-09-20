@@ -1,0 +1,269 @@
+.tweet-container{
+    max-width : 400px;
+    max-height: 400px;
+}
+
+.tweet-image{
+    max-width: 100%;
+    height: auto;
+}
+.tweet-text{
+    color: black;
+}
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    .tweet-container{
+        max-width: 50vw;
+        max-height: 50vw;
+    }    
+}
+    
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .tweet-container{
+        max-width: 45vw;
+        max-height: 45vw;
+    }   
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .tweet-container{
+        max-width: 35vw;
+        max-height: 35vw;
+    }   
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .tweet-container{
+        max-width: 20vw;
+        max-height: 20vw;
+    }   
+}
+
+
+tweet{
+    display: block;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: scale(1);
+    -webkit-transform: translate3D(0, 0, 0);
+    -webkit-transform-style: preserve-3d;
+}
+
+tweet > div > a > p{
+    background-color: white;
+    padding: 5px;
+}
+
+
+.animate-out{
+    animation: animate-out 0.5s ease-out;
+    opacity: 0;
+    z-index: 10;
+}
+@keyframes animate-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.index0{
+    position:relative;
+}
+.animate0{
+    animation: animate0 1s ease-out;
+    opacity: 1;
+    z-index: 10;
+}
+@keyframes animate0 {
+    0% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.index1{
+    position:relative;
+}
+.animate1{
+    animation: animate1 1s ease-out;
+    opacity: 0.9;
+    z-index: 9;
+}
+@keyframes animate1 {
+    0% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0.9;
+    }
+}
+
+.index2{
+    position:relative;
+}
+.animate2{
+    animation: animate2 1s ease-out;
+    opacity: 0.8;
+    z-index: 8;
+}
+@keyframes animate2 {
+    0% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+}
+
+.index3{
+    position:relative;
+}
+.animate3{
+    animation: animate3 1s ease-out;
+    opacity: 0.7;
+    z-index: 7;
+}
+@keyframes animate3 {
+    0% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
+
+.index4{
+    position:relative;
+}
+.animate4{
+    animation: animate4 1s ease-out;
+    opacity: 0.6;
+}
+@keyframes animate4 {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0.6;
+    }
+}
+
+.index5{
+    position:relative;
+}
+.animate5{
+    animation: animate5 1s ease-out;
+    opacity: 0.5;
+    z-index: 5;
+    
+}
+@keyframes animate5 {
+    0% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.index6{
+    position:relative;
+}
+.animate6{
+    animation: animate6 1s ease-out;
+    opacity: 0.4;
+    z-index: 4;
+   
+}
+@keyframes animate6 {
+    0% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 0.4;
+    }
+}
+
+.index7{
+    position:relative;
+}
+.animate7{
+    animation: animate7 1s ease-out;
+    opacity: 0.3;
+    z-index: 3;
+   
+
+}
+@keyframes animate7 {
+    0% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+.index8{
+    position:relative;
+}
+.animate8{
+    animation: animate8 1s ease-out;
+    opacity: 0.2;
+    z-index: 2;
+    
+}
+@keyframes animate8 {
+    0% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}
+
+
+
+.index9{
+    position:relative;
+}
+.animate9{
+    animation: animate9 1s ease-out;
+    opacity: 0.1;
+    z-index: 1;
+   
+}
+@keyframes animate9 {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 0.1;
+    }
+}
+
